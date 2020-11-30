@@ -23,6 +23,7 @@ Should Recognize Command
     Create Terminal Tester    ${UART}
 
     Execute Command           showAnalyzer ${UART}
+    Execute Command           sysbus LoadBinary @/content/audio_bin 0x000000000003ba50
 
     Start Emulation
 
